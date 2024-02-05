@@ -56,7 +56,9 @@ REFERENCES "category" ("category_id");
 ALTER TABLE "campaign" ADD CONSTRAINT "fk_campaign_subcategory_id" FOREIGN KEY("subcategory_id")
 REFERENCES "subcategory" ("subcategory_id");
 
+
 --Conferming tables have been created
+
 
 SELECT * 
 FROM subcategory;
@@ -70,7 +72,9 @@ FROM contacts;
 SELECT * 
 FROM campaign;
 
+
 -- Import .csv files in to the database
+
 
 SELECT * 
 FROM subcategory LIMIT 5;
@@ -83,5 +87,3 @@ FROM contacts LIMIT 5;
 
 SELECT * 
 FROM campaign LIMIT 5;
-
-
